@@ -56,3 +56,5 @@ mobile header - home / what we do / our work [COMP 417x370 each]
     items [FRAM 327x28] H gap133 SC -> wordmark, Nav, close icon (vector 20x20 fill:#4A4E55)
     menu expanded [FRAM 327x120] V gap24 pad24,24,24,24 MC fill:#EDEEF1 -> "what we do", "our work" instances
     The page's own item uses the "selected" state.
+
+External link arrow (assets/arrow-external.svg): 16x16 box drawn at 1.15em (about 17px beside 15px text), stroke currentColor 1.75, round caps and joins. Path: diagonal from bottom-left to top-right with a corner hook at the top right. Sits 6px after the link text.
