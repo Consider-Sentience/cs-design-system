@@ -1,0 +1,25 @@
+/* Nav link: "[ label ]". Figma: CS Solutions Design System, "what we do" (node 51:184).
+   Variants: default, hover. Text is ink at 55%. On hover the label switches to
+   Source Serif 4 Medium Italic, the brackets go from Nunito ExtraLight to Light,
+   and a rust dot at 55% appears on each side (6px left, 4px right).
+   Sizes here are the compact set used on AVAIL, BEARCLAW and FACTS (20px brackets, 14px label). */
+.cs-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 12px; /* room for the left dot, so nothing moves on hover */
+  color: color-mix(in srgb, var(--color-ink, #1B2430) 55%, transparent);
+  text-decoration: none;
+}
+.cs-nav-link:hover { margin-left: 0; }
+.cs-nav-link__bracket { font-family: 'Nunito', sans-serif; font-weight: 200; font-size: 20px; line-height: 1; }
+.cs-nav-link__label { font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; font-size: 14px; line-height: 1.5; }
+.cs-nav-link__dot { display: none; align-items: center; }
+.cs-nav-link__dot::before { content: ''; border-radius: 50%; background: color-mix(in srgb, var(--color-rust, #C97C2E) 55%, transparent); }
+.cs-nav-link__dot--left { width: 6px; }
+.cs-nav-link__dot--left::before { width: 6px; height: 6px; }
+.cs-nav-link__dot--right { width: 8px; }
+.cs-nav-link__dot--right::before { width: 4px; height: 4px; }
+.cs-nav-link:hover .cs-nav-link__dot { display: flex; }
+.cs-nav-link:hover .cs-nav-link__bracket { font-weight: 300; }
+.cs-nav-link:hover .cs-nav-link__label { font-family: 'Source Serif 4', serif; font-style: italic; font-weight: 500; }

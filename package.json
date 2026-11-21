@@ -1,14 +1,20 @@
 {
   "name": "cs-design-system",
   "version": "0.1.0",
-  "description": "Shared design tokens for Consider Sentience projects",
+  "description": "Shared design tokens and components for Consider Sentience projects",
   "type": "module",
   "main": "tokens.js",
   "exports": {
     ".": "./tokens.js",
     "./tokens.css": "./tokens.css",
-    "./tokens.json": "./tokens.json"
+    "./tokens.json": "./tokens.json",
+    "./nav-link.css": "./nav-link.css"
   },
-  "files": ["tokens.js", "tokens.css", "tokens.json"],
+  "files": [
+    "tokens.js",
+    "tokens.css",
+    "tokens.json",
+    "nav-link.css"
+  ],
   "license": "MIT"
 }
