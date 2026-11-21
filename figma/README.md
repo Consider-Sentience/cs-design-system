@@ -14,3 +14,4 @@ Figma file: **CS Solutions Design System** (file key `Kygwsk1ysOyPryLJhwcmz2`).
 The component files are plain-text specs (layout, padding, radius, fill, stroke, font, size, color) so a build can match Figma exactly. `../nav-link.css` is the shipped code for the nav link.
 
 Rule: Figma and this repo are updated together. A change in one is made in the other in the same pass.
+Lighter cloud for spines and side panels: `cloud-light` #F6F7F8 (halfway between cloud and white).

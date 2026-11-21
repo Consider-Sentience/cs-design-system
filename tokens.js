@@ -1,5 +1,6 @@
 export const colors = {
   'cloud': '#EDEEF1',
+  'cloud-light': '#F6F7F8',
   'ink': '#1B2430',
   'slate': '#4A4E55',
   'rust': '#C97C2E',
