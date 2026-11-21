@@ -6,6 +6,11 @@
   --color-rust-deep: #A8621F;
   --color-status-pass: #7A9E7E;
   --color-status-fail: #A85C4A;
+  --color-tide: #4F7A94;
+  --color-tide-tint: #DCE7EE;
+  --color-sand: #F2ECE1;
+  --color-sage-tint: #DFE4E3;
+  --color-clay-tint: #F1E4DF;
 
   --spacing-4: 4px;
   --spacing-6: 6px;
