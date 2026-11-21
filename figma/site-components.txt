@@ -1,0 +1,58 @@
+Site Components (Figma page "Site Components", file Kygwsk1ysOyPryLJhwcmz2)
+This is the considersentience.ai site. Format: name [type WxH] layout (H/V, gap, padding top,right,bottom,left, alignment) fill/stroke/radius, then for text: "sample" font size/line-height, case, color.
+Nav links: text and brackets are ink (#1B2430) at 55% opacity, so they sit on the cloud background.
+
+Assets on this page: "square" (logo mark, 248x248), "full" (wordmark 168x27 / 174x28 / 124x20), "Favicon 1" (48x48), "Social image 1" (1200x630). Copies of the images are in ../assets.
+
+what we do [COMP 139x90]   (node 51:184)  nav link, three states
+  Property 1=Default [COMP 137x24] H gap6 CC
+    [ [TEXT 7x24] "[" Nunito ExtraLight 24/100% #1B2430@0.55
+    what we do [TEXT 83x24] IBM Plex Sans Regular 16/150% #1B2430@0.55
+    ] [TEXT 7x24] "]" Nunito ExtraLight 24/100% #1B2430@0.55
+  Property 1=hover [COMP 135x24] H gap6 CC
+    ellipse [FRAM 6x24] H MC   -> Ellipse 6x6 fill:#C97C2E@0.55
+    [ [TEXT 8x24] Nunito Light 24/100% #1B2430@0.55
+    what we do [TEXT 81x24] Source Serif 4 Medium Italic 16/150% #1B2430@0.55
+    ] [TEXT 8x24] Nunito Light 24/100% #1B2430@0.55
+    ellipse [FRAM 8x24] H MC   -> Ellipse 4x4 fill:#C97C2E@0.55
+  Property 1=selected [COMP 137x24] H gap6 CM
+    [ and ] Nunito Light 24/100% #4A4E55
+    what we do: Source Serif 4 Medium Italic 16/150% #C97C2E
+our work [COMP 128x90]   same three states as "what we do" (text "our work"; hover dots are 4px left frame 8 wide, 6px right frame 6 wide)
+Site return to site [COMP 137x81]   dark-background version (header is ink #1B2430), 20px brackets, 14px label, gap5
+  Property 1=Default [COMP 127x21] H gap5 CC
+    [ and ] Nunito ExtraLight 20/100% #EDEEF1
+    return to site IBM Plex Sans Regular 14/150% #EDEEF1
+  Property 1=hover [COMP 127x21] H gap5 CC
+    left frame 8x21 -> dot 4x4 fill:#FFFFFF ; right frame 6x21 -> dot 6x6 fill:#FFFFFF
+    [ and ] Nunito Light 20/100% #C97C2E@0.7
+    return to site Source Serif 4 Medium Italic 14/150% #EDEEF1
+  Property 1=selected [COMP 127x21] H gap5 CM
+    [ and ] Nunito Light 20/100% #C97C2E ; label Source Serif 4 Medium Italic 14/150% #FFFFFF
+Primary button - large [COMP 152x150]
+  Default [COMP 110x44] H gap8 pad10,16,10,16 CC fill:#C97C2E r4 ; "learn more" IBM Plex Sans Regular 16/150% LOWER #EDEEF1
+  Variant2 (hover) [COMP 110x44] fill:#1B2430 r4 ; label Source Serif 4 Medium Italic 16/150% LOWER #EDEEF1
+Primary button - jumbo [COMP 176x170]
+  Default [COMP 134x54] H gap8 pad12,18,12,18 CC fill:#C97C2E r4 ; Plex Regular 20/150% LOWER #EDEEF1
+  Variant2 [COMP 134x54] pad12,15,12,15 fill:#1B2430 r4 ; Source Serif 4 Medium Italic 20/150% LOWER #EDEEF1
+Secondary button - large [COMP 165x150]
+  Default [COMP 123x44] H gap8 pad10,16,10,16 CC fill:#EDEEF1 stroke:#4A4E55/1 r4 ; "Work with us" Plex Regular 16/150% LOWER #1B2430
+  Variant2 [COMP 123x44] fill:#4A4E55 r4 ; Source Serif 4 Medium Italic 16/150% LOWER #EDEEF1
+Secondary button - jumbo [COMP 194x170]
+  Default [COMP 152x54] H gap8 pad12,18,12,18 CC fill:#EDEEF1 stroke:#4A4E55/1 r4 ; Plex Regular 20/150% LOWER #1B2430
+  Variant2 [COMP 152x54] fill:#4A4E55 r4 ; Source Serif 4 Medium Italic 20/150% LOWER #EDEEF1
+Primary button - mobile [COMP 139x136]
+  Default [COMP 97x37] H gap8 pad8,14,8,14 CC fill:#C97C2E r4 ; Plex Regular 14/150% LOWER #EDEEF1
+  Variant2 [COMP 97x37] fill:#1B2430 r4 ; Source Serif 4 Medium Italic 14/150% LOWER #EDEEF1
+Secondary button - mobile [COMP 151x136]
+  Default [COMP 108x37] H gap8 pad8,14,8,14 CC fill:#EDEEF1 stroke:#4A4E55/1 r4 ; Plex Regular 14/150% LOWER #1B2430
+  Variant2 [COMP 109x37] fill:#4A4E55 r4 ; Source Serif 4 Medium Italic 14/150% LOWER #EDEEF1
+mobile header - home / what we do / our work [COMP 417x370 each]
+  Property 1=Default [COMP 375x76] H gap16 pad24,24,24,24 SC fill:#EDEEF1
+    full [RECT 174x28] fill:IMAGE (wordmark)
+    mobile nav [FRAM 20x16] V gap8 MM  three lines, 20 wide, stroke #1B2430 1.8
+    Nav [FRAM 182x23] H gap24 MC  -> instances "what we do" and "our work" (Default)
+  Property 1=Variant2 (menu open) [COMP 375x212] V gap16 pad24,24,24,24 MM fill:#EDEEF1
+    items [FRAM 327x28] H gap133 SC -> wordmark, Nav, close icon (vector 20x20 fill:#4A4E55)
+    menu expanded [FRAM 327x120] V gap24 pad24,24,24,24 MC fill:#EDEEF1 -> "what we do", "our work" instances
+    The page's own item uses the "selected" state.

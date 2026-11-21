@@ -8,13 +8,18 @@
     ".": "./tokens.js",
     "./tokens.css": "./tokens.css",
     "./tokens.json": "./tokens.json",
-    "./nav-link.css": "./nav-link.css"
+    "./nav-link.css": "./nav-link.css",
+    "./typography.css": "./typography.css",
+    "./assets/*": "./assets/*"
   },
   "files": [
     "tokens.js",
     "tokens.css",
     "tokens.json",
-    "nav-link.css"
+    "nav-link.css",
+    "typography.css",
+    "assets",
+    "figma"
   ],
   "license": "MIT"
 }

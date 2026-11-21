@@ -12,3 +12,10 @@ In a Tailwind project, install with `npm install github:lish-stack/cs-design-sys
 ## Components
 
 - `nav-link.css` – the "[ label ]" nav link (Figma: "what we do", default and hover). Import it with `import 'cs-design-system/nav-link.css'` or `@import 'cs-design-system/nav-link.css'`, then use the markup in the file header: a `.cs-nav-link` anchor containing `__dot--left`, `__bracket`, `__label`, `__bracket`, `__dot--right`. It needs Nunito (200, 300), IBM Plex Sans and Source Serif 4 italic 500 to be loaded.
+
+## Typography, assets and Figma specs
+
+- `typography.css`: classes for every Figma text style (for example `.cs-text-heading-card`).
+- `assets/`: Consider Sentience wordmark, BEARCLAW logo and favicon, AVAIL logo and favicon.
+- `figma/`: plain-text component specs and the sync rule. See `figma/README.md`.
+- `tokens.css` includes dark-mode values under `[data-theme="dark"]`.

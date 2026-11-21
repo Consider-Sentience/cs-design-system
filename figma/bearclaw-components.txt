@@ -1,0 +1,119 @@
+BEARCLAW Components (Figma page "BEARCLAW Components", file Kygwsk1ysOyPryLJhwcmz2)
+Format: name [type WxH] layout (H/V, gap, padding top,right,bottom,left, main/cross alignment) fill/stroke/radius, then for text: "sample" font size/line-height, case, color.
+Colors are shown as exact hex. Where a hex matches a token it is that token (see ../tokens.json).
+
+Status Badge [COMP 164x56] H gap16 pad16,16,16,16 MM r5
+  Status=Pass [COMP 60x24] H gap6 pad4,10,4,10 CC fill:#DFE4E3 r100
+    dot [ELLI 6x6] fill:#7A9E7E
+    Pass [TEXT 28x16] "Pass" Plex SemiBold 11/16 UPPER #7A9E7E
+  Status=Fail [COMP 56x24] H gap6 pad4,10,4,10 CC fill:#E5DCDD r100
+    dot [ELLI 6x6] fill:#A85C4A
+    Fail [TEXT 24x16] "Fail" Plex SemiBold 11/16 UPPER #A85C4A
+Roadmap Status Badge [COMP 248x56] H gap16 pad16,16,16,16 MM r5
+  Status=Done [COMP 62x24] H gap6 pad4,10,4,10 CC fill:#DFE4E3 r100
+    dot [ELLI 6x6] fill:#7A9E7E
+    Done [TEXT 30x16] "Done" Plex SemiBold 11/16 UPPER #7A9E7E
+  Status=Next [COMP 61x24] H gap6 pad4,10,4,10 CC fill:#E9E0DA r100
+    dot [ELLI 6x6] fill:#C97C2E
+    Next [TEXT 29x16] "Next" Plex SemiBold 11/16 UPPER #C97C2E
+  Status=Then [COMP 61x24] H gap6 pad4,10,4,10 CC fill:#E3E5E8 r100
+    dot [ELLI 6x6] fill:#8C9199
+    Then [TEXT 29x16] "Then" Plex SemiBold 11/16 UPPER #8C9199
+Score Indicator [COMP 186x56] H gap24 pad16,16,16,16 MM r5
+  Status=Pass [COMP 41x24] H gap6 pad2,0,2,0 MC
+    dot [ELLI 7x7] fill:#7A9E7E
+    92% [TEXT 28x20] "92%" Plex Medium 13/20 #1B2430
+  Status=Fail [COMP 41x24] H gap6 pad2,0,2,0 MC
+    dot [ELLI 7x7] fill:#A85C4A
+    34% [TEXT 28x20] "34%" Plex Medium 13/20 #1B2430
+  Status=Neutral [COMP 24x24] H gap6 pad2,0,2,0 MC
+    dot [ELLI 7x7] fill:#8C9199
+    — [TEXT 11x20] "—" Plex Medium 13/20 #4A4E55
+Card Basic [COMP 360x134] V gap12 pad24,24,24,24 MM fill:#FFFFFF stroke:#4A4E55@0.12/1 r8
+  title [TEXT 310x24] "Card Title" Plex Medium 16/24 #1B2430
+  body [TEXT 310x48] "Body text for descriptions, explanations, and supporting content within the card." Plex Regular 15/24 #4A4E55
+Card Methodology [COMP 280x138] V gap8 pad20,20,20,20 MM fill:#FFFFFF stroke:#4A4E55@0.12/1 r8
+  label [TEXT 238x16] "METHODOLOGY LABEL" Plex SemiBold 11/16 UPPER #C97C2E
+  title [TEXT 238x24] "Method Name" Plex Medium 16/24 #1B2430
+  description [TEXT 238x40] "Short description of the methodology step or evaluation criterion." Plex Regular 13/20 #4A4E55
+Card Finding [COMP 340x199] V gap16 pad24,24,24,24 MM fill:#FFFFFF stroke:#4A4E55@0.12/1 r8
+  main [FRAM 290x76] V gap8 MM
+    stat [TEXT 290x44] "73%" Plex SemiBold 36/44 #C97C2E
+    caption [TEXT 290x24] "of models failed to cite primary sources" Plex Medium 15/24 #4A4E55
+  divider [FRAM 290x1] fill:#4A4E55@0.15
+  quote-area [FRAM 290x40] H gap12 MM
+    accent-bar [FRAM 3x40] fill:#C97C2E@0.5 r2
+    quote-text [TEXT 275x40] "Models consistently omit source attribution when discussing niche advocacy topics." Plex Regular 13/20 #4A4E55
+Quote Block [COMP 519x80] H gap16 pad4,0,4,0 MM
+  accent-rule [FRAM 3x60] fill:#C97C2E r2
+  text [FRAM 500x72] V gap8 MM
+    quote [TEXT 500x48] "The model generated plausible-sounding claims about organizational funding that had no basis in the cited source material." Plex Regular 15/24 #1B2430
+    attribution [TEXT 173x16] "— BEARCLAW evaluation, Round 3" Plex Medium 11/16 #4A4E55
+Accordion Row [COMP 632x228] V gap8 pad16,16,16,16 MM r5
+  State=Collapsed [COMP 600x48] V gap0 MM fill:#4A4E55@0.06 r8
+    header [FRAM 600x48] H gap0 pad12,16,12,16 SC
+      title [TEXT 256x24] "Judge reasoning for citation accuracy" Plex Medium 15/24 #1B2430
+      chevron [TEXT 15x24] "+" Plex Regular 24/24 #C97C2E
+  State=Expanded [COMP 600x140] V gap0 MM fill:#4A4E55@0.06 r8
+    header [FRAM 600x48] H gap0 pad12,16,12,16 SC
+      title [TEXT 256x24] "Judge reasoning for citation accuracy" Plex Medium 15/24 #1B2430
+      chevron [TEXT 13x24] "—" Plex Medium 16/24 #C97C2E
+    body [FRAM 600x92] V gap8 pad16,16,16,16 MM
+      content [TEXT 568x60] "The model was evaluated on whether its response directly cited the organization's primary website. ..." Plex Regular 13/20 #4A4E55
+Leaderboard Table Row [COMP 900x40] H gap0 pad10,16,10,16 MC fill:#FFFFFF stroke:#4A4E55@0.08/1
+  model-name [FRAM 220x20] H gap0 pad0,16,0,0 MM
+    model [TEXT 118x20] "Claude 3.5 Sonnet" Plex Medium 14/20 #1B2430
+  score-cell [FRAM 136x20] H gap0 MC   (repeated per column; alternate rows use fill:#EDEEF1@0.5)
+    score [FRAM 41x20] H gap6 MC
+      Ellipse [ELLI 7x7] fill:#7A9E7E   (pass #7A9E7E, fail #A85C4A, neutral #8C9199)
+      92% [TEXT 28x20] "92%" Plex Medium 13/20 #1B2430   (neutral score text #4A4E55)
+Leaderboard Table Header [COMP 900x36] H gap0 pad10,16,10,16 MC stroke:#4A4E55@0.15/1
+  model-header [FRAM 220x16] H gap0 MM
+    MODEL [TEXT 37x16] "MODEL" Plex SemiBold 11/16 UPPER #4A4E55
+  header-cell [FRAM 136x16] H gap0 MM   (repeated: CITATION, ACCURACY, RELEVANCE, DEPTH, OVERALL)
+    CITATION [TEXT 51x16] "CITATION" Plex SemiBold 11/16 UPPER #4A4E55
+  Assembled table: frame 900 wide, fill:#FFFFFF stroke:#4A4E55@0.12/1 r8, header + rows
+Navigation Bar [COMP 1312x204] V gap16 pad16,16,16,16 MM r5
+  Viewport=Desktop [COMP 1280x74] H gap0 pad16,32,16,32 SC fill:#EDEEF1 stroke:#4A4E55@0.1/1
+    logo [FRAM 128x40] H gap2 MC
+      bearclaw-logo 1 [RECT 40x40] fill:IMAGE (assets/bearclaw-logo.png)
+      wordmark [TEXT 86x24] "BEARCLAW" Plex SemiBold 16/24 UPPER #1B2430
+    nav-links [FRAM 613x26] H gap32 MM
+      Overview [FRAM 59x20] V gap4 MC
+        Overview [TEXT 59x20] "Overview" Plex Regular 14/20 #4A4E55
+      Leaderboard [FRAM 82x26] V gap4 MC   (active item)
+        Leaderboard [TEXT 82x20] "Leaderboard" Plex Medium 14/20 #1B2430
+        active-indicator [FRAM 82x2] fill:#C97C2E r1
+      Methodology, Findings, Roadmap, About, GitHub: same as Overview (Plex Regular 14/20 #4A4E55)
+  Viewport=Mobile [COMP 390x82] H gap0 pad24,24,24,24 SC fill:#EDEEF1 stroke:#4A4E55@0.1/1
+    logo [FRAM 112x32] H gap4 MC
+      bearclaw-logo 1 [RECT 32x32] fill:IMAGE
+      wordmark [TEXT 76x20] "BEARCLAW" Plex SemiBold 14/20 UPPER #1B2430
+    mobile nav [FRAM 20x16] V gap8 MM   three lines, 20 wide, stroke #1B2430 1.8
+Hero Header [COMP 1280x510] V gap24 pad80,256,80,256 MC fill:#EDEEF1
+  section [FRAM 600x278] V gap16 MC
+    title [FRAM 301x164] V gap0 MC
+      bearclaw-logo 1 [RECT 100x100] fill:IMAGE
+      title [TEXT 301x64] "BEARCLAW" Plex SemiBold 56/64 UPPER #1B2430
+    subhead [TEXT 600x58] "A Benchmark for Evaluating Animal Representation in Civic & Legal ..." Plex 22/auto #4A4E55 (initial letters semibold)
+    number [FRAM 240x24] H gap6 MC   ("a project from Consider Sentience")
+      [ [TEXT 7x24] "[" Nunito Regular 20/120% ls-2% #C97C2E
+      a project from [TEXT 84x17] Source Serif 4 Medium Italic 14/120% ls-2% #4A4E55
+      full 1 [RECT 124x20] fill:IMAGE (assets/consider-sentience-wordmark.png)
+      ] [TEXT 7x24] "]" Nunito Regular 20/120% ls-2% #C97C2E
+  Body [TEXT 768x48] Plex Regular 15/24 #4A4E55
+Footer [COMP 1280x114] V gap24 pad48,32,48,32 MC fill:#EDEEF1
+  copyright [TEXT 391x18] "© 2026 Consider Sentience. BEARCLAW is an open research benchmark." Plex Regular 12/18 #4A4E55
+Dropdown Select [COMP 740x152] V gap20 pad20,20,20,20 MM r5
+  State=Default [COMP 700x46] H gap0 pad12,16,12,16 SC fill:#FFFFFF stroke:#4A4E55@0.55/1 r4
+    value [TEXT 106x20] "Selected value" Plex Regular 16/20 #1B2430
+    icon-wrapper [FRAM 16x16] chevron-down, vector 8x4 stroke:#4A4E55/1
+  State=Focused: same, stroke:#C97C2E/1
+Toggle Segmented [COMP 203x152] V gap20 pad20,20,20,20 MM r5
+  Active=Model A [COMP 163x46] H gap0 pad6,6,6,6 MM stroke:#1B2430@0.55/1 r100
+    toggle-buttons [FRAM 149x32] H gap0 MM
+      toggle-active [FRAM 75x32] H gap0 pad8,12,8,12 MM fill:#1B2430 r100
+        Model A [TEXT] Plex Medium 12/16 UPPER #FFFFFF
+      toggle-inactive [FRAM 74x32] H gap0 pad8,12,8,12 MM r100
+        Model B [TEXT] Plex Regular 12/16 UPPER #1B2430
+  Active=Model B: mirrored (active segment on the right)

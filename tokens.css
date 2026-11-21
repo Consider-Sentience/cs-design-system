@@ -11,6 +11,11 @@
   --color-sand: #F2ECE1;
   --color-sage-tint: #DFE4E3;
   --color-clay-tint: #F1E4DF;
+  --color-white: #FFFFFF;
+  --color-status-fail-tint: #E5DCDD;
+  --color-next-tint: #E9E0DA;
+  --color-then-tint: #E3E5E8;
+  --color-neutral: #8C9199;
 
   --spacing-4: 4px;
   --spacing-6: 6px;
@@ -28,4 +33,17 @@
   --radius-pill: 9999px;
 
   --font-sans: "IBM Plex Sans", sans-serif;
+  --font-bracket: "Nunito", sans-serif;
+  --font-accent: "Source Serif 4", serif;
+}
+
+/* Dark mode: add data-theme="dark" to a container. Only the colors that change are listed. */
+[data-theme="dark"] {
+  --color-cloud: #1B2430;
+  --color-ink: #EDEEF1;
+  --color-slate: #9BA0A8;
+  --color-rust: #D9923E;
+  --color-rust-deep: #E0A050;
+  --color-status-pass: #8FB893;
+  --color-status-fail: #C47060;
 }

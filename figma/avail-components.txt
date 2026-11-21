@@ -1,0 +1,52 @@
+AVAIL Components (Figma page "AVAIL Components", file Kygwsk1ysOyPryLJhwcmz2)
+Format: name [type WxH] layout (H/V, gap, padding top,right,bottom,left, alignment) fill/stroke/radius, then for text: "sample" font size/line-height, letter spacing, case, color.
+Note: two colors here have no variable: #1A1C1E (input text) and #000000 (dropdown option text, drop shadow @0.2).
+
+Input panel [COMP 808x1261]
+  Default [COMP 766x560] V gap24 pad32,32,32,32 MC fill:#EDEEF1 stroke:#C97C2E/1 r8
+    intro "Pick an animal advocacy organization and a question. ..." IBM Plex Sans Medium 16/160% ls-0.5% #4A4E55
+    form-group [FRAM 702x71] V gap8 MM -> label "Organization" Plex Medium 14 ls2% UPPER #C97C2E, then Input - Organization
+    form-group [FRAM 702x131] V gap12 MM -> label "Question" (same style), toggle (below), Input - Query
+      eyebrow toggle [FRAM 278x44] H pad6,6,6,6 MC stroke:#1B2430@0.55/1 r100
+        toggle-active [FRAM 140x32] H pad8,12,8,12 MM fill:#1B2430 r100 ; "sample questions" Plex Medium 12 UPPER #FFFFFF
+        toggle-inactive [FRAM 126x32] H pad8,12,8,12 MM r100 ; "write your own" Plex Regular 12 UPPER #1B2430
+    AVAIL Primary button (large and mobile instances)
+    note "NOTE: This demo checks for direct citations only ..." 12, #4A4E55@0.55
+    footer "AVAIL is an experimental research preview by Consider Sentience." Plex Regular 12 #4A4E55@0.55
+  Variant2 [COMP 766x639]: same, with "write your own" active and Textarea - Custom in place of Input - Query
+Dropdown list [COMP 346x530] V gap0 MM r4 fx:DROP_SHADOW blur24 #000000@0.2 ; ten Dropdown item instances (State=Enabled)
+Dropdown item [COMP 386x146]
+  State=Enabled [COMP 344x52] V pad0,12,0,12 CM fill:#FFFFFF ; text-wrap H gap10 ; "Option" Plex Regular 16 #000000
+  State=Hovered [COMP 344x52] same, fill:#EDEEF1
+Input - Organization [COMP 742x684]
+  State=default [COMP 700x45] V gap2 MM
+    select-dropdown [FRAM 700x45] H pad12,16,12,16 SC fill:#FFFFFF stroke:#4A4E55@0.55/1 r4 ; "Faunalytics" Plex Regular 16 #1A1C1E ; chevron-down 16x16 (vector 8x4 stroke:#4A4E55/1)
+    dropdown list [FRAM 700x530] r4 fx:DROP_SHADOW blur24 #000000@0.2 ; dropdown-item instances (700x53, pad16,12,16,12, fill:#FFFFFF)
+  State=focus: select-dropdown stroke:#C97C2E/1
+Input - Query [COMP 742x514]   same structure as Input - Organization ; sample text "What does Faunalytics research?" ; items 700x52 pad0,12,0,12 (long ones 700x74)
+Textarea - Custom [COMP 742x454]
+  State=Default [COMP 700x124] V gap8 MM
+    textarea-field [FRAM 700x100] V pad16,16,16,16 MM fill:#FFFFFF stroke:#4A4E55@0.55/1 r4 ; placeholder Plex Regular 15 #4A4E55@0.55
+    counter row [FRAM 700x16] H SM ; "0 / 280" Plex Regular 12 #4A4E55@0.55
+  State=focus: stroke:#C97C2E/1
+  State=filled: stroke:#C97C2E/1 ; text "Can oysters feel pain?" Plex Regular 15 #1B2430 ; counter "22 / 280" #1B2430
+AVAIL Primary button - large [COMP 176x158]
+  Default [COMP 132x48] H gap8 pad12,16,12,16 CC fill:#C97C2E r100 ; "learn more" Plex Regular 16/150% ls2% UPPER #EDEEF1
+  Variant2 (hover) [COMP 134x48] fill:#1B2430 r100 ; Plex Medium 16/150% ls2% UPPER #EDEEF1
+AVAIL Primary button - mobile [COMP 150x144]
+  Default [COMP 107x41] H gap8 pad10,14,10,14 CC fill:#C97C2E r100 ; "run check" Plex Regular 14/150% ls2% UPPER #EDEEF1
+  Variant2 [COMP 108x41] fill:#1B2430 r100 ; Plex Medium 14/150% ls2% UPPER #EDEEF1
+AVAIL Secondary button - large [COMP 195x158]
+  Default [COMP 151x48] H gap8 pad12,16,12,16 CC fill:#EDEEF1 stroke:#4A4E55/1 r100 ; "Work with us" Plex Regular 16/150% ls2% UPPER #1B2430
+  Variant2 [COMP 153x48] fill:#4A4E55 r100 ; Plex Medium 16/150% ls2% UPPER #EDEEF1
+AVAIL Secondary button - mobile [COMP 176x144]
+  Default [COMP 132x41] H gap8 pad10,14,10,14 CC fill:#EDEEF1 stroke:#4A4E55/1 r100 ; Plex Regular 14/150% ls2% UPPER #1B2430
+  Variant2 [COMP 134x41] fill:#4A4E55 r100 ; Plex Medium 14/150% ls2% UPPER #EDEEF1
+AVAIL return to site [COMP 137x81]   dark-background version (AVAIL header is ink #1B2430)
+  State=Default [COMP 127x21] H gap5 CC
+    [ and ] Nunito ExtraLight 20/100% #EDEEF1 ; "return to site" Plex Regular 14/150% #EDEEF1
+  State=hover [COMP 127x21] H gap5 CC
+    left frame 8x21 -> dot 4x4 fill:#FFFFFF ; right frame 6x21 -> dot 6x6 fill:#FFFFFF
+    [ and ] Nunito Light 20/100% #C97C2E@0.7 ; label Source Serif 4 Medium Italic 14/150% #EDEEF1
+  State=selected [COMP 127x21] H gap5 CM
+    [ and ] Nunito Light 20/100% #C97C2E ; label Source Serif 4 Medium Italic 14/150% #FFFFFF

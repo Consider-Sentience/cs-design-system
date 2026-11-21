@@ -1,0 +1,23 @@
+/* Text styles from the Figma file. Use as class="cs-text-heading-card". Letter spacing is in em (Figma percent / 100). */
+.cs-text-display-hero { font-family: var(--font-sans); font-weight: 600; font-size: 56px; line-height: 64px; }
+.cs-text-heading-section { font-family: var(--font-sans); font-weight: 600; font-size: 22px; line-height: 30px; }
+.cs-text-heading-card { font-family: var(--font-sans); font-weight: 500; font-size: 16px; line-height: 24px; }
+.cs-text-body-default { font-family: var(--font-sans); font-weight: 400; font-size: 15px; line-height: 24px; }
+.cs-text-body-small { font-family: var(--font-sans); font-weight: 400; font-size: 13px; line-height: 20px; }
+.cs-text-label-caps { font-family: var(--font-sans); font-weight: 600; font-size: 11px; line-height: 16px; text-transform: uppercase; }
+.cs-text-avail-hero-h1 { font-family: var(--font-sans); font-weight: 400; font-size: 40px; line-height: 48px; }
+.cs-text-avail-wordmark { font-family: var(--font-sans); font-weight: 600; font-size: 24px; line-height: 32px; text-transform: uppercase; }
+.cs-text-avail-section-title { font-family: var(--font-sans); font-weight: 400; font-size: 28px; line-height: 36px; letter-spacing: 0.02em; text-transform: uppercase; }
+.cs-text-avail-cta-title { font-family: var(--font-sans); font-weight: 500; font-size: 20px; line-height: 28px; letter-spacing: 0.02em; text-transform: uppercase; }
+.cs-text-avail-subhead { font-family: var(--font-sans); font-weight: 400; font-size: 20px; line-height: 28px; letter-spacing: 0.02em; text-transform: uppercase; }
+.cs-text-avail-stat-number { font-family: var(--font-sans); font-weight: 500; font-size: 28px; line-height: 36px; letter-spacing: 0.02em; }
+.cs-text-avail-panel-intro { font-family: var(--font-sans); font-weight: 500; font-size: 16px; line-height: 24px; }
+.cs-text-avail-form-field { font-family: var(--font-sans); font-weight: 400; font-size: 15px; line-height: 24px; }
+.cs-text-avail-body { font-family: var(--font-sans); font-weight: 400; font-size: 15px; line-height: 24px; }
+.cs-text-avail-field-label { font-family: var(--font-sans); font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0.02em; text-transform: uppercase; }
+.cs-text-avail-secondary { font-family: var(--font-sans); font-weight: 400; font-size: 14px; line-height: 20px; }
+.cs-text-avail-button { font-family: var(--font-sans); font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0.02em; text-transform: uppercase; }
+.cs-text-avail-toggle-primary { font-family: var(--font-sans); font-weight: 500; font-size: 12px; line-height: 16px; text-transform: uppercase; }
+.cs-text-avail-toggle-secondary { font-family: var(--font-sans); font-weight: 400; font-size: 11px; line-height: 16px; text-transform: uppercase; }
+.cs-text-avail-small-button { font-family: var(--font-sans); font-weight: 400; font-size: 11px; line-height: 16px; letter-spacing: 0.02em; text-transform: uppercase; }
+.cs-text-avail-caption { font-family: var(--font-sans); font-weight: 400; font-size: 12px; line-height: 16px; }
