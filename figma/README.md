@@ -4,7 +4,7 @@ Figma file: **CS Solutions Design System** (file key `Kygwsk1ysOyPryLJhwcmz2`).
 
 | File here | Figma page | Contents |
 |---|---|---|
-| `../tokens.json`, `tokens.css`, `tokens.js` | Variables | Colors (Light and Dark), spacing, radius, fonts |
+| `../tokens.json`, `tokens.css`, `tokens.js` | Variables | Colors (one set, no modes), spacing, radius, fonts |
 | `../typography.css` | Text styles | 22 text styles |
 | `site-components.txt` | Site Components | considersentience.ai nav links, buttons, mobile headers, images |
 | `avail-components.txt` | AVAIL Components | Inputs, dropdowns, textarea, AVAIL buttons, return to site |

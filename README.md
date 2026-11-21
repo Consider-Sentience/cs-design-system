@@ -18,4 +18,4 @@ In a Tailwind project, install with `npm install github:lish-stack/cs-design-sys
 - `typography.css`: classes for every Figma text style (for example `.cs-text-heading-card`).
 - `assets/`: Consider Sentience wordmark, BEARCLAW logo and favicon, AVAIL logo and favicon.
 - `figma/`: plain-text component specs and the sync rule. See `figma/README.md`.
-- `tokens.css` includes dark-mode values under `[data-theme="dark"]`.
+- Dark backgrounds (AVAIL): swap cloud and ink. Every other color stays the same.

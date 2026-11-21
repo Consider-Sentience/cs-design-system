@@ -37,13 +37,3 @@
   --font-accent: "Source Serif 4", serif;
 }
 
-/* Dark mode: add data-theme="dark" to a container. Only the colors that change are listed. */
-[data-theme="dark"] {
-  --color-cloud: #1B2430;
-  --color-ink: #EDEEF1;
-  --color-slate: #9BA0A8;
-  --color-rust: #D9923E;
-  --color-rust-deep: #E0A050;
-  --color-status-pass: #8FB893;
-  --color-status-fail: #C47060;
-}

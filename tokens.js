@@ -18,26 +18,6 @@ export const colors = {
   'neutral': '#8C9199'
 };
 
-export const colorsDark = {
-  'cloud': '#1B2430',
-  'ink': '#EDEEF1',
-  'slate': '#9BA0A8',
-  'rust': '#D9923E',
-  'rust-deep': '#E0A050',
-  'status-pass': '#8FB893',
-  'status-fail': '#C47060',
-  'tide': '#4F7A94',
-  'tide-tint': '#DCE7EE',
-  'sand': '#F2ECE1',
-  'sage-tint': '#DFE4E3',
-  'clay-tint': '#F1E4DF',
-  'white': '#FFFFFF',
-  'status-fail-tint': '#E5DCDD',
-  'next-tint': '#E9E0DA',
-  'then-tint': '#E3E5E8',
-  'neutral': '#8C9199'
-};
-
 export const spacing = { 4: '4px', 6: '6px', 8: '8px', 10: '10px', 12: '12px', 16: '16px', 24: '24px', 32: '32px', 48: '48px', 64: '64px' };
 
 export const radius = { sm: '4px', md: '8px', pill: '9999px' };
