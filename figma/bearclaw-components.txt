@@ -9,7 +9,7 @@ Status Badge [COMP 164x56] H gap16 pad16,16,16,16 MM r5
   Status=Fail [COMP 56x24] H gap6 pad4,10,4,10 CC fill:#E5DCDD r100
     dot [ELLI 6x6] fill:#A85C4A
     Fail [TEXT 24x16] "Fail" Plex SemiBold 11/16 UPPER #A85C4A
-Roadmap Status Badge [COMP 248x56] H gap16 pad16,16,16,16 MM r5
+Roadmap Status Badge [COMP 317x56] H gap16 pad16,16,16,16 MM r5
   Status=Done [COMP 62x24] H gap6 pad4,10,4,10 CC fill:#DFE4E3 r100
     dot [ELLI 6x6] fill:#7A9E7E
     Done [TEXT 30x16] "Done" Plex SemiBold 11/16 UPPER #7A9E7E
@@ -19,6 +19,9 @@ Roadmap Status Badge [COMP 248x56] H gap16 pad16,16,16,16 MM r5
   Status=Then [COMP 61x24] H gap6 pad4,10,4,10 CC fill:#E3E5E8 r100
     dot [ELLI 6x6] fill:#8C9199
     Then [TEXT 29x16] "Then" Plex SemiBold 11/16 UPPER #8C9199
+  Status=Indirect [COMP 69x24] H gap6 pad4,10,4,10 CC fill:#DCE7EE r100   (FACTS: indirect failure modes; direct ones use Next)
+    dot [ELLI 6x6] fill:#4F7A94
+    Indirect [TEXT] "Indirect" Plex SemiBold 11/16 UPPER #4F7A94
 Score Indicator [COMP 186x56] H gap24 pad16,16,16,16 MM r5
   Status=Pass [COMP 41x24] H gap6 pad2,0,2,0 MC
     dot [ELLI 7x7] fill:#7A9E7E
@@ -44,6 +47,11 @@ Card Finding [COMP 340x199] V gap16 pad24,24,24,24 MM fill:#FFFFFF stroke:#4A4E5
   quote-area [FRAM 290x40] H gap12 MM
     accent-bar [FRAM 3x40] fill:#C97C2E@0.5 r2
     quote-text [TEXT 275x40] "Models consistently omit source attribution when discussing niche advocacy topics." Plex Regular 13/20 #4A4E55
+Card Left Bar [COMP 360x130] H gap16 pad24,24,24,24 fill:#FFFFFF stroke:#4A4E55@0.12/1 r8   (replaces the old 3px top-border accent; used by FACTS cards and tiles)
+  accent-bar [FRAM 3x(fill)] fill:#C97C2E r2   (bar colour varies per card: rust, tide #4F7A94, status-pass, rust-deep, ink)
+  text [FRAM] V gap8
+    title [TEXT] "Card Title" Plex Medium 16/24 #1B2430
+    body [TEXT] "Body text ..." Plex Regular 15/24 #4A4E55
 Quote Block [COMP 519x80] H gap16 pad4,0,4,0 MM
   accent-rule [FRAM 3x60] fill:#C97C2E r2
   text [FRAM 500x72] V gap8 MM
@@ -53,11 +61,11 @@ Accordion Row [COMP 632x228] V gap8 pad16,16,16,16 MM r5
   State=Collapsed [COMP 600x48] V gap0 MM fill:#4A4E55@0.06 r8
     header [FRAM 600x48] H gap0 pad12,16,12,16 SC
       title [TEXT 256x24] "Judge reasoning for citation accuracy" Plex Medium 15/24 #1B2430
-      chevron [TEXT 15x24] "+" Plex Regular 24/24 #C97C2E
+      icon [FRAM 16x16] plus: bar-h 12x1.5 + bar-v 1.5x12, both #C97C2E (same length and thickness as the minus)
   State=Expanded [COMP 600x140] V gap0 MM fill:#4A4E55@0.06 r8
     header [FRAM 600x48] H gap0 pad12,16,12,16 SC
       title [TEXT 256x24] "Judge reasoning for citation accuracy" Plex Medium 15/24 #1B2430
-      chevron [TEXT 13x24] "—" Plex Medium 16/24 #C97C2E
+      icon [FRAM 16x16] minus: bar-h 12x1.5 #C97C2E (identical to the plus bar-h)
     body [FRAM 600x92] V gap8 pad16,16,16,16 MM
       content [TEXT 568x60] "The model was evaluated on whether its response directly cited the organization's primary website. ..." Plex Regular 13/20 #4A4E55
 Leaderboard Table Row [COMP 900x40] H gap0 pad10,16,10,16 MC fill:#FFFFFF stroke:#4A4E55@0.08/1
