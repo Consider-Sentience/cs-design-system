@@ -15,3 +15,4 @@ The component files are plain-text specs (layout, padding, radius, fill, stroke,
 
 Rule: Figma and this repo are updated together. A change in one is made in the other in the same pass.
 Lighter cloud for spines and side panels: `cloud-light` #F6F7F8 (halfway between cloud and white).
+Corner radius: boxes, cards, inputs, dropdowns and message boxes use 8 (`--radius-md`). Buttons keep their own radius (site buttons 4, AVAIL buttons pill). `--radius-sm` (4) is for site buttons only.

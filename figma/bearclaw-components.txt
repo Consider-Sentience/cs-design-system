@@ -105,7 +105,7 @@ Hero Header [COMP 1280x510] V gap24 pad80,256,80,256 MC fill:#EDEEF1
 Footer [COMP 1280x114] V gap24 pad48,32,48,32 MC fill:#EDEEF1
   copyright [TEXT 391x18] "© 2026 Consider Sentience. BEARCLAW is an open research benchmark." Plex Regular 12/18 #4A4E55
 Dropdown Select [COMP 740x152] V gap20 pad20,20,20,20 MM r5
-  State=Default [COMP 700x46] H gap0 pad12,16,12,16 SC fill:#FFFFFF stroke:#4A4E55@0.55/1 r4
+  State=Default [COMP 700x46] H gap0 pad12,16,12,16 SC fill:#FFFFFF stroke:#4A4E55@0.55/1 r8
     value [TEXT 106x20] "Selected value" Plex Regular 16/20 #1B2430
     icon-wrapper [FRAM 16x16] chevron-down, vector 8x4 stroke:#4A4E55/1
   State=Focused: same, stroke:#C97C2E/1
