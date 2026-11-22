@@ -14,19 +14,19 @@ Input panel [COMP 808x1261]
     note "NOTE: This demo checks for direct citations only ..." 12, #4A4E55@0.55
     footer "AVAIL is an experimental research preview by Consider Sentience." Plex Regular 12 #4A4E55@0.55
   Variant2 [COMP 766x639]: same, with "write your own" active and Textarea - Custom in place of Input - Query
-Dropdown list [COMP 346x530] V gap0 MM r8 fx:DROP_SHADOW blur24 #000000@0.2 ; ten Dropdown item instances (State=Enabled)
+Dropdown list [COMP 346x530] V gap0 MM r4 fx:DROP_SHADOW blur24 #000000@0.2 ; ten Dropdown item instances (State=Enabled)
 Dropdown item [COMP 386x146]
   State=Enabled [COMP 344x52] V pad0,12,0,12 CM fill:#FFFFFF ; text-wrap H gap10 ; "Option" Plex Regular 16 #000000
   State=Hovered [COMP 344x52] same, fill:#EDEEF1
 Input - Organization [COMP 742x684]
   State=default [COMP 700x45] V gap2 MM
-    select-dropdown [FRAM 700x45] H pad12,16,12,16 SC fill:#FFFFFF stroke:#4A4E55@0.55/1 r8 ; "Faunalytics" Plex Regular 16 #1A1C1E ; chevron-down 16x16 (vector 8x4 stroke:#4A4E55/1)
-    dropdown list [FRAM 700x530] r8 fx:DROP_SHADOW blur24 #000000@0.2 ; dropdown-item instances (700x53, pad16,12,16,12, fill:#FFFFFF)
+    select-dropdown [FRAM 700x45] H pad12,16,12,16 SC fill:#FFFFFF stroke:#4A4E55@0.55/1 r4 ; "Faunalytics" Plex Regular 16 #1A1C1E ; chevron-down 16x16 (vector 8x4 stroke:#4A4E55/1)
+    dropdown list [FRAM 700x530] r4 fx:DROP_SHADOW blur24 #000000@0.2 ; dropdown-item instances (700x53, pad16,12,16,12, fill:#FFFFFF)
   State=focus: select-dropdown stroke:#C97C2E/1
 Input - Query [COMP 742x514]   same structure as Input - Organization ; sample text "What does Faunalytics research?" ; items 700x52 pad0,12,0,12 (long ones 700x74)
 Textarea - Custom [COMP 742x454]
   State=Default [COMP 700x124] V gap8 MM
-    textarea-field [FRAM 700x100] V pad16,16,16,16 MM fill:#FFFFFF stroke:#4A4E55@0.55/1 r8 ; placeholder Plex Regular 15 #4A4E55@0.55
+    textarea-field [FRAM 700x100] V pad16,16,16,16 MM fill:#FFFFFF stroke:#4A4E55@0.55/1 r4 ; placeholder Plex Regular 15 #4A4E55@0.55
     counter row [FRAM 700x16] H SM ; "0 / 280" Plex Regular 12 #4A4E55@0.55
   State=focus: stroke:#C97C2E/1
   State=filled: stroke:#C97C2E/1 ; text "Can oysters feel pain?" Plex Regular 15 #1B2430 ; counter "22 / 280" #1B2430
