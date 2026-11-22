@@ -58,6 +58,14 @@ export const typography = {
     "letterSpacingPercent": 0,
     "textTransform": "none"
   },
+  "body/large": {
+    "fontFamily": "IBM Plex Sans",
+    "fontWeight": 400,
+    "fontSize": 17,
+    "lineHeight": 27.2,
+    "letterSpacingPercent": 0,
+    "textTransform": "none"
+  },
   "body/small": {
     "fontFamily": "IBM Plex Sans",
     "fontWeight": 400,

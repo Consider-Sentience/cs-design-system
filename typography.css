@@ -3,6 +3,7 @@
 .cs-text-heading-section { font-family: var(--font-sans); font-weight: 600; font-size: 22px; line-height: 30px; }
 .cs-text-heading-card { font-family: var(--font-sans); font-weight: 500; font-size: 16px; line-height: 24px; }
 .cs-text-body-default { font-family: var(--font-sans); font-weight: 400; font-size: 15px; line-height: 24px; }
+.cs-text-body-large { font-family: var(--font-sans); font-weight: 400; font-size: 17px; line-height: 27.2px; }
 .cs-text-body-small { font-family: var(--font-sans); font-weight: 400; font-size: 13px; line-height: 20px; }
 .cs-text-label-caps { font-family: var(--font-sans); font-weight: 600; font-size: 11px; line-height: 16px; text-transform: uppercase; }
 .cs-text-avail-hero-h1 { font-family: var(--font-sans); font-weight: 400; font-size: 40px; line-height: 48px; }
