@@ -19,7 +19,7 @@ export const colors = {
   'neutral': '#8C9199'
 };
 
-export const spacing = { 4: '4px', 6: '6px', 8: '8px', 10: '10px', 12: '12px', 16: '16px', 24: '24px', 32: '32px', 48: '48px', 64: '64px' };
+export const spacing = { 4: '4px', 6: '6px', 8: '8px', 10: '10px', 12: '12px', 16: '16px', 24: '24px', 32: '32px', 40: '40px', 48: '48px', 64: '64px' };
 
 export const radius = { sm: '4px', md: '8px', pill: '9999px' };
 
@@ -86,9 +86,9 @@ export const typography = {
     "fontFamily": "IBM Plex Sans",
     "fontWeight": 400,
     "fontSize": 40,
-    "lineHeight": 48,
+    "lineHeight": 56,
     "letterSpacingPercent": 0,
-    "textTransform": "none"
+    "textTransform": "uppercase"
   },
   "avail/wordmark": {
     "fontFamily": "IBM Plex Sans",
@@ -134,8 +134,8 @@ export const typography = {
     "fontFamily": "IBM Plex Sans",
     "fontWeight": 500,
     "fontSize": 16,
-    "lineHeight": 24,
-    "letterSpacingPercent": 0,
+    "lineHeight": 25.6,
+    "letterSpacingPercent": -0.5,
     "textTransform": "none"
   },
   "avail/form-field": {
@@ -149,8 +149,8 @@ export const typography = {
   "avail/body": {
     "fontFamily": "IBM Plex Sans",
     "fontWeight": 400,
-    "fontSize": 15,
-    "lineHeight": 24,
+    "fontSize": 17,
+    "lineHeight": 27.2,
     "letterSpacingPercent": 0,
     "textTransform": "none"
   },
@@ -209,5 +209,37 @@ export const typography = {
     "lineHeight": 16,
     "letterSpacingPercent": 0,
     "textTransform": "none"
+  },
+  "avail/field-description": {
+    "fontFamily": "IBM Plex Sans",
+    "fontWeight": 400,
+    "fontSize": 13,
+    "lineHeight": 20.8,
+    "letterSpacingPercent": 0,
+    "textTransform": "none"
+  },
+  "avail/hero-body": {
+    "fontFamily": "IBM Plex Sans",
+    "fontWeight": 400,
+    "fontSize": 20,
+    "lineHeight": 32,
+    "letterSpacingPercent": -0.5,
+    "textTransform": "none"
+  },
+  "avail/tab": {
+    "fontFamily": "IBM Plex Sans",
+    "fontWeight": 500,
+    "fontSize": 14,
+    "lineHeight": 20,
+    "letterSpacingPercent": 2,
+    "textTransform": "uppercase"
+  },
+  "avail/finding": {
+    "fontFamily": "IBM Plex Sans",
+    "fontWeight": 500,
+    "fontSize": 18,
+    "lineHeight": 23.4,
+    "letterSpacingPercent": 2,
+    "textTransform": "uppercase"
   }
 };

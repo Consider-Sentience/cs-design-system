@@ -6,15 +6,15 @@
 .cs-text-body-large { font-family: var(--font-sans); font-weight: 400; font-size: 17px; line-height: 27.2px; }
 .cs-text-body-small { font-family: var(--font-sans); font-weight: 400; font-size: 13px; line-height: 20px; }
 .cs-text-label-caps { font-family: var(--font-sans); font-weight: 600; font-size: 11px; line-height: 16px; text-transform: uppercase; }
-.cs-text-avail-hero-h1 { font-family: var(--font-sans); font-weight: 400; font-size: 40px; line-height: 48px; }
+.cs-text-avail-hero-h1 { font-family: var(--font-sans); font-weight: 400; font-size: 40px; line-height: 56px; text-transform: uppercase; }
 .cs-text-avail-wordmark { font-family: var(--font-sans); font-weight: 600; font-size: 24px; line-height: 32px; text-transform: uppercase; }
 .cs-text-avail-section-title { font-family: var(--font-sans); font-weight: 400; font-size: 28px; line-height: 36px; letter-spacing: 0.02em; text-transform: uppercase; }
 .cs-text-avail-cta-title { font-family: var(--font-sans); font-weight: 500; font-size: 20px; line-height: 28px; letter-spacing: 0.02em; text-transform: uppercase; }
 .cs-text-avail-subhead { font-family: var(--font-sans); font-weight: 400; font-size: 20px; line-height: 28px; letter-spacing: 0.02em; text-transform: uppercase; }
 .cs-text-avail-stat-number { font-family: var(--font-sans); font-weight: 500; font-size: 28px; line-height: 36px; letter-spacing: 0.02em; }
-.cs-text-avail-panel-intro { font-family: var(--font-sans); font-weight: 500; font-size: 16px; line-height: 24px; }
+.cs-text-avail-panel-intro { font-family: var(--font-sans); font-weight: 500; font-size: 16px; line-height: 25.6px; letter-spacing: -0.005em; }
 .cs-text-avail-form-field { font-family: var(--font-sans); font-weight: 400; font-size: 15px; line-height: 24px; }
-.cs-text-avail-body { font-family: var(--font-sans); font-weight: 400; font-size: 15px; line-height: 24px; }
+.cs-text-avail-body { font-family: var(--font-sans); font-weight: 400; font-size: 17px; line-height: 27.2px; }
 .cs-text-avail-field-label { font-family: var(--font-sans); font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0.02em; text-transform: uppercase; }
 .cs-text-avail-secondary { font-family: var(--font-sans); font-weight: 400; font-size: 14px; line-height: 20px; }
 .cs-text-avail-button { font-family: var(--font-sans); font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0.02em; text-transform: uppercase; }
@@ -22,3 +22,21 @@
 .cs-text-avail-toggle-secondary { font-family: var(--font-sans); font-weight: 400; font-size: 11px; line-height: 16px; text-transform: uppercase; }
 .cs-text-avail-small-button { font-family: var(--font-sans); font-weight: 400; font-size: 11px; line-height: 16px; letter-spacing: 0.02em; text-transform: uppercase; }
 .cs-text-avail-caption { font-family: var(--font-sans); font-weight: 400; font-size: 12px; line-height: 16px; }
+.cs-text-avail-field-description { font-family: var(--font-sans); font-weight: 400; font-size: 13px; line-height: 20.8px; }
+.cs-text-avail-hero-body { font-family: var(--font-sans); font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: -0.005em; }
+.cs-text-avail-tab { font-family: var(--font-sans); font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0.02em; text-transform: uppercase; }
+
+.cs-text-avail-finding { font-family: var(--font-sans); font-weight: 500; font-size: 18px; line-height: 23.4px; letter-spacing: 0.02em; text-transform: uppercase; }
+
+/* AVAIL mobile sizes (below 768px). Hierarchy and ratios match desktop. */
+@media (max-width: 767px) {
+  .cs-text-avail-hero-h1 { font-size: 24px; line-height: 33.6px; }
+  .cs-text-avail-hero-body { font-size: 17px; line-height: 27.2px; }
+  .cs-text-avail-section-title { font-size: 20px; line-height: 28px; }
+  .cs-text-avail-cta-title, .cs-text-avail-subhead { font-size: 16px; line-height: 24px; }
+  .cs-text-avail-stat-number { font-size: 20px; line-height: 28px; }
+  .cs-text-avail-body { font-size: 16px; line-height: 25.6px; }
+  .cs-text-avail-tab { font-size: 12px; line-height: 16px; }
+  .cs-text-avail-button { font-size: 14px; line-height: 21px; }
+  .cs-text-avail-finding { font-size: 16px; line-height: 20.8px; }
+}

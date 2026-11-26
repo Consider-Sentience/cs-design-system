@@ -2,34 +2,67 @@ AVAIL Components (Figma page "AVAIL Components", file Kygwsk1ysOyPryLJhwcmz2)
 Format: name [type WxH] layout (H/V, gap, padding top,right,bottom,left, alignment) fill/stroke/radius, then for text: "sample" font size/line-height, letter spacing, case, color.
 Note: two colors here have no variable: #1A1C1E (input text) and #000000 (dropdown option text, drop shadow @0.2).
 
-Input panel [COMP 808x1261]
-  Default [COMP 766x560] V gap24 pad32,32,32,32 MC fill:#EDEEF1 stroke:#C97C2E/1 r8
-    intro "Pick an animal advocacy organization and a question. ..." IBM Plex Sans Medium 16/160% ls-0.5% #4A4E55
-    form-group [FRAM 702x71] V gap8 MM -> label "Organization" Plex Medium 14 ls2% UPPER #C97C2E, then Input - Organization
-    form-group [FRAM 702x131] V gap12 MM -> label "Question" (same style), toggle (below), Input - Query
-      eyebrow toggle [FRAM 278x44] H pad6,6,6,6 MC stroke:#1B2430@0.55/1 r100
-        toggle-active [FRAM 140x32] H pad8,12,8,12 MM fill:#1B2430 r100 ; "sample questions" Plex Medium 12 UPPER #FFFFFF
-        toggle-inactive [FRAM 126x32] H pad8,12,8,12 MM r100 ; "write your own" Plex Regular 12 UPPER #1B2430
-    AVAIL Primary button (large and mobile instances)
-    note "NOTE: This demo checks for direct citations only ..." 12, #4A4E55@0.55
-    footer "AVAIL is an experimental research preview by Consider Sentience." Plex Regular 12 #4A4E55@0.55
-  Variant2 [COMP 766x639]: same, with "write your own" active and Textarea - Custom in place of Input - Query
-Dropdown list [COMP 346x530] V gap0 MM r4 fx:DROP_SHADOW blur24 #000000@0.2 ; ten Dropdown item instances (State=Enabled)
+Input panel [COMP 806x2057]   one form for single checks and tracked lists
+  Frequency=Once [COMP 766xHUG] V gap24 pad32,32,32,32 MC fill:#EDEEF1 stroke:#C97C2E/1 r8
+    intro [FRAM FILLxHUG] V padBottom16 (so intro -> first field = 40) ; "Pick an animal advocacy organization and add your questions. We'll ask Claude, Perplexity, ChatGPT, and Gemini, and check whether each answer cites that organization's own website." avail/panel-intro Medium 16/160% ls-0.5% #4A4E55 centered
+    field [FRAM FILL] V gap12 ; every field after the first adds padTop8 (fields sit 32 apart)
+      label+description [FRAM FILL] V gap4
+        label avail/field-label Medium 14 ls2% UPPER #C97C2E
+        description avail/field-description Regular 13/160% #4A4E55 (#EDEEF1 on the navy tracker page)
+      input
+    1 Organization: "Choose the organization whose website we look for in each answer." -> Input - Organization
+    2 Questions: "Type up to 25 questions, one per line. You can also add questions from our samples, or upload a list as a CSV (download the template)." ("download the template" underlined link)
+        actions [FRAM HUG] H gap8 -> AVAIL Small button "add sample" (Icon / Plus), AVAIL Small button "upload csv" (Icon / Upload)
+        Textarea - Questions (State=Default)
+    3 How often: "Once runs your questions now. Weekly or monthly runs them again on that schedule so you can see what changes." -> AVAIL Toggle - secondary (Selected=Once)
+    AVAIL Primary button - large "run check"
+    notes [FRAM FILL] V gap16 ; avail/caption 12 #4A4E55@0.55 centered
+      "NOTE: This demo checks for direct citations only, ..." ("direct citations" Medium)
+      "AVAIL is an experimental research preview by Consider Sentience. Free during the preview. Up to 25 questions per list. Lists and repeat checks get a private link to the results; anyone who has it can view them."
+  Frequency=Weekly [COMP 766xHUG]: same, with Textarea - Questions (State=filled), toggle Selected=Weekly, and
+    4 Email (optional): label "Email" + " (optional)" Regular, no caps, #4A4E55@0.55 ; "We'll send you a link to your citation tracking report in the next few minutes, and a reminder to check it when it updates." -> Input - Text
+    button "start tracking"
+  Email also shows for a one-time run with more than one question (description then ends after "in the next few minutes.").
+Dropdown list [COMP 346x560] V gap0 MM r4 fx:DROP_SHADOW blur24 #000000@0.2 ; ten Dropdown item instances (State=Enabled)
 Dropdown item [COMP 386x146]
-  State=Enabled [COMP 344x52] V pad0,12,0,12 CM fill:#FFFFFF ; text-wrap H gap10 ; "Option" Plex Regular 16 #000000
+  State=Enabled [COMP 344x52] V pad0,12,0,12 CM fill:#FFFFFF ; text-wrap H gap10 ; "Option" avail/form-field Regular 15 #000000
   State=Hovered [COMP 344x52] same, fill:#EDEEF1
-Input - Organization [COMP 742x684]
+Input - Organization [COMP 742x714]
   State=default [COMP 700x45] V gap2 MM
-    select-dropdown [FRAM 700x45] H pad12,16,12,16 SC fill:#FFFFFF stroke:#4A4E55@0.55/1 r4 ; "Faunalytics" Plex Regular 16 #1A1C1E ; chevron-down 16x16 (vector 8x4 stroke:#4A4E55/1)
-    dropdown list [FRAM 700x530] r4 fx:DROP_SHADOW blur24 #000000@0.2 ; dropdown-item instances (700x53, pad16,12,16,12, fill:#FFFFFF)
+    select-dropdown [FRAM 700x45] H pad12,16,12,16 SC fill:#FFFFFF stroke:#4A4E55@0.55/1 r4 ; "Faunalytics" avail/form-field Regular 15 #1A1C1E ; chevron-down 16x16 (vector 8x4 stroke:#4A4E55/1)
+    dropdown list [FRAM 700x530] r4 fx:DROP_SHADOW blur24 #000000@0.2 ; dropdown-item instances (700x53, pad16,12,16,12, fill:#FFFFFF, 15 Regular)
   State=focus: select-dropdown stroke:#C97C2E/1
-Input - Query [COMP 742x514]   same structure as Input - Organization ; sample text "What does Faunalytics research?" ; items 700x52 pad0,12,0,12 (long ones 700x74)
-Textarea - Custom [COMP 742x454]
-  State=Default [COMP 700x124] V gap8 MM
-    textarea-field [FRAM 700x100] V pad16,16,16,16 MM fill:#FFFFFF stroke:#4A4E55@0.55/1 r4 ; placeholder Plex Regular 15 #4A4E55@0.55
-    counter row [FRAM 700x16] H SM ; "0 / 280" Plex Regular 12 #4A4E55@0.55
+Textarea - Questions [COMP 742x728]
+  State=Default [COMP 700xHUG] V gap8 MM
+    textarea-field [FRAM 700x192] V pad16,16,16,16 fill:#FFFFFF stroke:#4A4E55@0.55/1 r4 ; placeholder "Start typing…" Regular 15 #4A4E55@0.55
+    counter row [FRAM 700x16] H, right-aligned ; "0 / 25" avail/caption 12 #4A4E55@0.55 (status-fail Medium when over 25)
   State=focus: stroke:#C97C2E/1
-  State=filled: stroke:#C97C2E/1 ; text "Can oysters feel pain?" Plex Regular 15 #1B2430 ; counter "22 / 280" #1B2430
+  State=filled: stroke:#C97C2E/1 ; one question per line, Regular 15 #1B2430 ; counter "2 / 25"
+Input - Text [COMP 740x146]
+  State=default [COMP 700x45] H pad0,16 CM fill:#FFFFFF stroke:#4A4E55@0.55/1 r4 ; placeholder "you@example.org" avail/form-field 15 #4A4E55@0.55
+  State=focus: stroke:#C97C2E/1
+AVAIL Small button [COMP SET] props: Label (text), Icon (instance swap: Icon / Plus, Upload, Copy)
+  State=Default [COMP HUG] H gap8 pad7,12,7,12 CM fill:#EDEEF1 stroke:#4A4E55/1 r100 ; icon 14 rust ; label avail/small-button Regular 11/16 ls2% UPPER #1B2430
+  State=Hover: fill:#4A4E55 ; label #EDEEF1 ; icon #EDEEF1
+  Used for: Add sample (+ chevron in code), Upload CSV, Copy link, Pause / Resume, Delete tracker (confirm state: status-fail fill, white text)
+AVAIL Toggle - secondary [COMP SET] Selected=Once | Weekly | Monthly
+  container H pad4 r100 stroke:#4A4E55@0.45/1 ; segment pad6,10,6,10 r100 ; avail/toggle-secondary 11 UPPER
+  active: fill:#4A4E55, text #FFFFFF Medium ; inactive: no fill, text #1B2430 Regular
+  On the navy tracker page: stroke #EDEEF1@0.4, active fill #EDEEF1 with ink text, inactive text #EDEEF1
+AVAIL Add sample menu [COMP 560xHUG] V r4 fill:#FFFFFF fx:DROP_SHADOW blur12 #000000@0.2 ; opens under the Add sample button
+  row [FRAM FILL] H gap12 pad12 ; Icon / Plus (rust) + question avail/form-field 15/140% #1B2430 ; hover fill #EDEEF1
+  add-all row: stroke-top #C97C2E@0.4/1 ; "Add all" 15 Medium ; shown while 2+ rows remain
+  Picking a row adds it as a new line in the box and removes it from the menu; the menu stays open until outside click or Escape.
+  Empty: "All sample questions added." 15 #4A4E55@0.55
+AVAIL Finding card [COMP 372xHUG] V gap8 pad24 fill:#EDEEF1 stroke:#C97C2E/1 r8 ; props Context, Stat, Label
+  context "When a question named the organization" Regular 14/160% #1B2430 (13 on mobile)
+  stat "80% of answers" avail/finding Medium 18 ls2% UPPER #C97C2E (16 on mobile)
+  label "linked to that organization's own website" Regular 14/160% #1B2430 (13 on mobile)
+AVAIL Assistant bar chart [COMP 768xHUG] V gap16 pad24 fill:#EDEEF1 stroke:#C97C2E/1 r8
+  caption V gap4: "It depends on the assistant" avail/finding UPPER #C97C2E ; "When a question didn't name an organization, the share of each assistant's answers that linked to any of the 10 organizations" Regular 14 #1B2430
+  rows V gap12: name 120 wide | track FILL x12 r4 fill:#4A4E55@0.1 with value bar fill:#C97C2E r4 (width = share) | "48%" 56 wide right-aligned, Medium #1B2430
+  Every bar has its value printed, so color is never the only cue (rust on cloud is 2.8:1).
+Icons [COMP 14x14]: Icon / Plus, Icon / Upload, Icon / Copy (stroke #C97C2E 1.5), Icon / Chevron down (12x12, stroke #1B2430)
 AVAIL Primary button - large [COMP 176x158]
   Default [COMP 132x48] H gap8 pad12,16,12,16 CC fill:#C97C2E r100 ; "learn more" Plex Regular 16/150% ls2% UPPER #EDEEF1
   Variant2 (hover) [COMP 134x48] fill:#1B2430 r100 ; Plex Medium 16/150% ls2% UPPER #EDEEF1

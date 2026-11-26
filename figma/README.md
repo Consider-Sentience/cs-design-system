@@ -5,9 +5,9 @@ Figma file: **CS Solutions Design System** (file key `Kygwsk1ysOyPryLJhwcmz2`).
 | File here | Figma page | Contents |
 |---|---|---|
 | `../tokens.json`, `tokens.css`, `tokens.js` | Variables | Colors (one set, no modes), spacing, radius, fonts |
-| `../typography.css` | Text styles | 23 text styles |
+| `../typography.css` | Text styles | 27 text styles, plus AVAIL mobile sizes |
 | `site-components.txt` | Site Components | considersentience.ai nav links, buttons, mobile headers, images |
-| `avail-components.txt` | AVAIL Components | Inputs, dropdowns, textarea, AVAIL buttons, return to site |
+| `avail-components.txt` | AVAIL Components | Form panel, inputs, dropdowns, questions box, small button, add-sample menu, how-often toggle, finding card, by-assistant bar chart, AVAIL buttons, icons, return to site |
 | `bearclaw-components.txt` | BEARCLAW Components | Badges, cards, tables, nav, hero, footer, toggles |
 | `../assets/` | Images | Wordmark, logos, favicons |
 
